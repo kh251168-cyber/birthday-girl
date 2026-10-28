@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Birthday Quest ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="game-page">
+  <nav class="topbar">
+    <a class="back-link" href="index.html">← back</a>
+    <span class="brand-mark">♡</span>
+    <span>THE BIRTHDAY QUEST</span>
+    <span class="status"><i></i> level 01</span>
+  </nav>
+
+  <main class="quest-wrap">
+    <div class="eyebrow"><span>✦</span> a tiny birthday game <span>✦</span></div>
+    <h1>First, unlock<br><em>your birthday magic.</em></h1>
+    <p class="intro">Collect all 3 hearts to unlock your little surprise!<br>Tap the hearts below. You’ve got this. ♡</p>
+
+    <section class="game-card" id="gameCard">
+      <div class="game-topline"><span>MISSION: BIRTHDAY GIRL</span><span id="scoreLabel">HEARTS 0 / 3</span></div>
+      <div class="progress-track"><div id="progressFill"></div></div>
+      <div class="heart-game" id="heartGame">
+        <button class="collect-heart" aria-label="Collect heart">♡</button>
+        <button class="collect-heart" aria-label="Collect heart">♡</button>
+        <button class="collect-heart" aria-label="Collect heart">♡</button>
+      </div>
+      <p id="gameMessage" class="game-message">Psst… tap every heart to continue.</p>
+    </section>
+
+    <section id="reveal" class="reveal hidden">
+      <div class="win-badge">MISSION COMPLETE ✦</div>
+      <h2>You did it, birthday girl! 🎂</h2>
+      <p>Your reward is waiting. Take a deep breath and make a wish.</p>
+      <button class="button button-primary" id="openGift">Open your gift ♡ <span>✧</span></button>
+    </section>
+
+    <section id="birthdayGift" class="birthday-gift hidden">
+      <div class="cake-area">
+        <div class="cake-sparkle">✦</div>
+        <div class="cake">
+          <div class="candles"><span>🕯️</span><span>🕯️</span><span>🕯️</span></div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"><span>♡</span><span>✦</span><span>♡</span></div>
+          <div class="cake-bottom"><b>HAPPY</b><b>B-DAY</b></div>
+          <div class="cake-plate"></div>
+        </div>
+      </div>
+      <div class="letter">
+        <div class="letter-label">A LITTLE NOTE FOR YOU · 001</div>
+        <h2>To my favorite girl, ♡</h2>
+        <p>Happy Birthday! I’m so lucky to have you in my life. I hope this new year brings you happiness, success, beautiful memories, and everything your heart wishes for.</p>
+        <p>May your days be as lovely as you are, your dreams keep growing, and our friendship stay forever. You deserve all the love in the world. Love you always! 🎀</p>
+        <div class="signature">your bestie, always <span>♡</span></div>
+      </div>
+      <div class="memories">
+        <h2>Our little world <span>♡</span></h2>
+        <p class="memory-subtitle">Two besties. One shared love for software.</p>
+        <div class="memory-grid">
+          <article class="memory-card">
+            <img src="assets/girl_black_hair.png" alt="Black-haired pixel art girl">
+            <span>THE BIRTHDAY STAR</span>
+            <p>Pretty, iconic, and absolutely one of a kind.</p>
+          </article>
+          <article class="memory-card">
+            <img src="assets/girl_brown_hair.png" alt="Brown-haired pixel art girl">
+            <span>PARTNER IN CODE</span>
+            <p>Side by side through every bug and every laugh.</p>
+          </article>
+        </div>
+      </div>
+      <div class="final-message">
+        <span class="final-star">✦</span>
+        <p>Friendship status: <strong>FOREVER</strong></p>
+        <code>console.log("love you always ♡");</code>
+        <button class="button button-outline" id="celebrateAgain">Celebrate again ✨</button>
+      </div>
+    </section>
+  </main>
+  <footer>DESIGNED FOR YOU <span>♡</span> WITH LOVE &lt;/&gt;</footer>
+  <script src="script.js"></script>
+</body>
+</html>
